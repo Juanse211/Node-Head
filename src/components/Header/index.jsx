@@ -9,7 +9,6 @@ const Header = () => {
           <img id="logo-head" src="../files/radiohead-dark.png" alt="Logo Radiohead"/>
         </div>
         <div id="header__buttons">
-
           <CartIcon />
           <p/>
           <button id="switch__body" class="switch__body">

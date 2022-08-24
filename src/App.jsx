@@ -1,13 +1,17 @@
 import './App.css';
-import Header from './components/Header';
 import Footer from './components/Footer';
-import ItemListContainer from './container/itemListContainer';
+import Header from './components/Header';
+import ItemListContainer from './container/itemListContainer'
+
 
 const App = () => {
   return (
     <div className="App">
       <Header />
       <Footer />
+      <ItemListContainer greeting="Radiohead Fanpage" />
+      <header className="App-header">
+      </header>
     </div>
   );
 }
