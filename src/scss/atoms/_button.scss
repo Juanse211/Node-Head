@@ -1,0 +1,24 @@
+.button {
+  display: flex;
+  width: 20%;
+  justify-content: end;
+}
+
+.button__body {
+  width: max-content;
+  height: 4vh;
+  border: 1px solid $dark-color;
+  border-radius: 0.25rem;
+  line-height: 1.5;
+  background-color: $primary-dark-color;
+  color: $light-color;
+  font-size: $-fs-19;
+}
+
+@media screen and (max-width: 768px) {
+  .button {
+    width: 100%;
+    justify-content: center;
+    margin-right: 0vh;
+  }
+}

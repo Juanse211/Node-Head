@@ -1,14 +1,13 @@
-import logo from './files/radiohead.png';
 import './App.css';
-import Navbar from './components/Navbar/Navbar';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import ItemListContainer from './container/itemListContainer';
 
 const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-      </header>
-      <Navbar />
+      <Header />
+      <Footer />
     </div>
   );
 }

@@ -1,47 +1,26 @@
+import CartIcon from './cartWidget';
+
 const Header = () => {  
   return (
     <header>
       <nav>
-        <div class="container-logo">
+        <div className="container-logo">
           <img id="logo-head" src="../files/radiohead.png" alt="Logo Radiohead"/>
           <img id="logo-head" src="../files/radiohead-dark.png" alt="Logo Radiohead"/>
         </div>
         <div id="header__buttons">
-          <img id="cart" src="../files/shopping-cart.png" alt="cart"/>
-          <img id="cart-dark" src="../files/shopping-cart-dark.png" alt="cart"/>
-          <p></p>
+
+          <CartIcon />
+          <p/>
           <button id="switch__body" class="switch__body">
-            <span><i class="fa-solid fa-sun"></i></span>
-            <span><i class="fa-solid fa-moon"></i></span>
+            <span><i className="fa-solid fa-sun"></i></span>
+            <span><i className="fa-solid fa-moon"></i></span>
           </button>
         </div>
       </nav>
     </header>
   )
 }
-
-  /* HTML
-  <header>
-    <nav>
-      <div class="container-logo">
-        <a href="../../index.html"><img src="../files/radiohead.png" alt="Logo Radiohead " id="logo-head"></a>
-        <a href="../../index.html"><img src="../files/radiohead-dark.png" alt="Logo Radiohead dark " id="logo-head-dark"></a>
-      </div>
-  
-      <div id="header__buttons">
-        <img id="cart" src="../files/shopping-cart.png" alt="cart">
-        <img id="cart-dark" src="../files/shopping-cart-dark.png" alt="cart">
-        <p></p>
-        <button class="switch__body" id="switch__body">
-          <span><i class="fa-solid fa-sun"></i></span>
-          <span><i class="fa-solid fa-moon"></i></span>
-        </button>
-      </div>
-    </nav>
-  </header>
-  */
-
-
 
   /* CSS
   .container-menu {
@@ -118,4 +97,4 @@ const Header = () => {
 }
   */
 
-export default navBar;
+export default Header;

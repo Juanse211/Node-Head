@@ -1,0 +1,82 @@
+// Typography font
+$font-family: 'PT Serif', serif;
+
+// Typography scale
+$fs-base: 16;
+
+$-fs-9: 9 / $fs-base + rem;
+$-fs-12: 12 / $fs-base + rem;
+$-fs-14: 14 / $fs-base + rem;
+$-fs-19: 19 / $fs-base + rem;
+$-fs-22: 22 / $fs-base + rem;
+$-fs-25: 25 / $fs-base + rem;
+$-fs-33: 33 / $fs-base + rem;
+$-fs-44: 44 / $fs-base + rem;
+
+//Typography size
+.fs-paragraph {
+  font-size: $-fs-19;
+}
+
+.fs-paragraph-m {
+  font-size: $-fs-22;
+}
+
+.fs-title-m {
+  font-size: $-fs-33;
+}
+
+.fs-title-l {
+  font-size: $-fs-44;
+}
+
+.fs-title-s{
+  font-size: $-fs-25;
+}
+
+//Typography color
+.fs-color{
+  color: $dark-color;
+  body.dark & {
+    color: $light-color;
+  }
+}
+
+.fs-color-inverted {
+  color: $light-color;
+  body.dark & {
+    color: $dark-color;
+  }
+}
+
+.fs-primary-color{
+  color: $primary-dark-color;
+  body.dark & {
+      color: $primary-light-color;
+    }
+}
+
+// Bleeding
+.fs-bleeding {
+  margin-top: 10vh;
+}
+
+//Typography aline
+.fs-center{
+  text-align: center;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .fs-start {
+    text-align: left;
+  }
+
+  .fs-center-tab {
+    text-align: center;
+  }
+
+  .fs-end {
+    text-align: right;
+  }
+}

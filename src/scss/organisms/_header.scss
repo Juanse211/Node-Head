@@ -1,0 +1,121 @@
+nav {
+  top: 0%;
+  background-color: transparent;
+  display: flex;
+  position: fixed;
+  min-width: 100%;
+  max-width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  transition: .3s ease all;
+  box-shadow: $primary-dark-color;
+  z-index: 1;
+}
+
+#logo-head {
+  position: relative;
+  border: 0px;
+  z-index: 1;
+  height: 90px;
+  body.dark & {
+    display: none;
+  }
+}
+  
+#logo-head-dark {
+  display: none;
+  position: relative;
+  border: 0px;
+  z-index: 1;
+  height: 90px;
+  body.dark & {
+    display: block;
+  }
+}
+
+
+#header__buttons{
+  display: flex;
+  flex-direction: row;
+}
+
+#cart{
+  margin-top: 1vh;
+  margin-right: 3vh;
+  cursor: pointer;
+  height: 2vh;
+  body.dark & {
+    display: none;
+  }
+}
+
+#cart-dark {
+  display: none;
+  margin-top: 1vh;
+  margin-right: 3vh;
+  cursor: pointer;
+  height: 2vh;
+  body.dark & {
+    display: block;
+  }
+
+}
+
+
+.switch__body {
+  background-color: $dark-color;
+  border-radius: 1000px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  outline: none;
+  height: 32px;
+  z-index: 1;
+  &::after {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    background-color: $light-color;
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 100px;
+    transition: .3 ease all;
+    box-shadow: 0px 0px 2px 2px $dark-color;
+  }
+  &.active {
+    background-color: $primary-color;
+    color: $dark-color;
+    &::after{
+      right: 0;
+      left: unset;
+    }
+  }
+}
+
+span {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  position: relative;
+  background: none;
+  color: $light-color;
+  z-index: 2;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  #logo-head {
+    max-height: 70px;
+  }
+
+  #logo-head-dark{
+    max-height: 70px;
+  }
+}

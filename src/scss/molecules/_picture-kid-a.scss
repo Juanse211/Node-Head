@@ -1,0 +1,12 @@
+#picture-head {
+  display: none;
+  max-width: 320px;
+  min-width: 100%;
+
+  z-index: -1;
+}
+@media screen and (max-width: 768px) {
+  #picture-head {
+    display: block;
+  }
+}

@@ -1,0 +1,73 @@
+.container-shop{
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  margin-bottom: 1vh;
+  flex-wrap: wrap;
+}
+
+.card__text{
+  width: 100%;
+}
+
+.container-card{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+}
+
+.card{
+  display: flex;
+  min-width:max-content;
+  background-color: transparent;
+  width: 33%;
+  border: none;
+  padding: 1vh;
+  margin: 0 auto;
+  margin-bottom: 5vh;
+}
+
+.card__aside{
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.card__image{
+  width: 36vh;
+}
+
+.card__header{
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+}
+
+.card__title{
+  margin: 0 auto;
+  text-align: center;
+  max-width: 35vh;
+}
+
+.card__subtitle{
+  text-align: center;
+  margin-top: 2vh;
+}
+
+.card__subtitle-money{
+  width: 100%;
+  z-index: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+  
+  .card__image {
+    width: 25vh;
+  }
+  
+  .card__title {
+    width: 24vh;
+  }
+}

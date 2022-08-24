@@ -1,0 +1,116 @@
+.tabs__date {
+  width: max-content;
+  border-style: solid;
+  border-width: 0.5px;
+  padding: 12px;
+  margin-left: 7.5%;
+  font-size: $-fs-19;
+  background-color: $gray-color;
+  color: $dark-color;
+  body.dark & {
+    background-color: $dark-gray-color;
+    color: $light-color;
+    border-color: $dark-color;
+  }
+}
+
+.tabs {
+  margin: 0 auto;
+  width: 85%;
+  margin-bottom: 1vh;
+}
+
+.tabs__list {
+  display: flex;
+  flex-direction: row;
+  border-style: solid;
+  border-width: 0.5px;
+  padding: 1.5vh;
+  font-size: 17px;
+  background-color: $gray-color;
+  color: $dark-color;
+  border-color: $dark-color;
+  body.dark & {
+    background-color: $dark-gray-color;
+    color: $light-color;
+    border-color: $dark-color;
+  }
+}
+
+.tabs__item {
+  width: 12%;
+  text-align: start;
+  font-size: $-fs-19;
+}
+
+.tabs__item-2 {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  font-size: $-fs-19;
+}
+
+.tabs__item__item {
+  width: 33%;
+}
+
+.tabs__item-3 {
+  width: 18%;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 1px;
+  position: relative;
+  background-color: $primary-dark-color;
+  text-align: center;
+
+  a {
+    margin: 0 auto;
+    text-align: center;
+    font-size: $-fs-19;
+    color: $light-color;
+    text-decoration: none;
+  }
+}
+
+.tabs__item-3__sold-out {
+  color: $dark-color;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .tabs__date {
+    margin: 0 auto;
+  }
+
+  .tabs {
+    width: 97%;
+  }
+
+  .tabs__list{
+    flex-direction: column;
+  }
+
+  .tabs__item {
+    width: 100%;
+    text-align: center;
+    padding-bottom: .5vh;
+  }
+    
+  .tabs__item-2 {
+    width: 100%;
+    padding-bottom: .5vh;
+  }
+
+  .tabs__item__item {
+    width: 33.33%;
+  }
+    
+  .tabs__item-3 {
+    margin: 0 auto;
+    width: max-content;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    padding-bottom: .5vh;
+    text-align: center;
+  }
+} 
