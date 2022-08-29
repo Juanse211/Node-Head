@@ -5,8 +5,8 @@ const Header = () => {
     <header>
       <nav>
         <div className="container-logo">
-          <img id="logo-head" src="../files/radiohead.png" alt="Logo Radiohead"/>
-          <img id="logo-head" src="../files/radiohead-dark.png" alt="Logo Radiohead"/>
+          <img id="logo-head" src="../public/files/radiohead.png" alt="Logo Radiohead"/>
+          <img id="logo-head" src="../public/files/radiohead-dark.png" alt="Logo Radiohead"/>
         </div>
         <div id="header__buttons">
           <CartIcon />
