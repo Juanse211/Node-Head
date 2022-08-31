@@ -1,22 +1,15 @@
-import { useState } from "react"
+import  React from 'react';
+import {FineArt} from './item';
+import Item from './item';
 
-const [fineArt, setFineArt] = useState([])
 
-try{
-  const response = await fetch('../json/fineart.json')
-  const data = await response.json()
-  setFineArt(data.results)
-  consol
-}catch(e){
-  console.log(e)
+export const ItemList = ({fineArt}) =>{
+  return(
+    <ul>
+      { fineArt.map(art => {
+        return <Item art={art}/>  
+        })
+      }
+    </ul>
+  )
 }
-
-
-console.log(fineArt)
-const cardList = () => {  
-  return <>
-
-  </>
-}
-
-export default ItemList
