@@ -1,8 +1,8 @@
-import { userState } from 'react'
+import { useState } from 'react'
 
 const ItemCount = (stock, initial) => {  
-  const [count, setCount] = userState([])
-
+  const [count, setCount] = useState([])
+  
   return (
     <div>
       <div>
@@ -10,25 +10,30 @@ const ItemCount = (stock, initial) => {
       </div>
       <div>
         <button onClick={()=>{
-          if (count <=initial){
-          count.splice(0, 1,)
+          if(count.lenght <= initial){
+            alert('min is 1')
+          }else{
+            setCount([...count, -1])
+            console.log(count)
           }
         }}
         >-</button>
         <button onClick={()=>{
-          if(count.length <= stock){
+          if(count.length >= stock){
+            console.log(count)
             alert('no more stock')
           }else{
-            setCount([...count, "Item"])
+            setCount([...count, +1])
             console.log(count)
           }
         }}
         >+</button>
         <button onClick={()=>{
-          if(count.length <= stock){
+          if(count.length >= 5){
+            console.log(count)
             alert('no more stock')
           }else{
-            setCount([...count, "Item"])
+            setCount([...count, +1])
             console.log(count)
           }
         }}
