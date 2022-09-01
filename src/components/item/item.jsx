@@ -27,6 +27,7 @@ export const fineArt =[
 export const Item = (fineArt) => {  
   return <>
     <div class="card__header">
+      <img src="../files/shop/(fineArt.art.image)" alt="" />
       <h5>{fineArt.art.name}</h5>
       <span>$ {fineArt.art.price}</span>
     </div>
