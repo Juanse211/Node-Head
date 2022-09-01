@@ -1,6 +1,7 @@
 import { useState } from "react"
-import ItemList from "../components/item/itemList";
-import { FineArt } from "../components/item/item";
+import { ItemList } from "../components/item/itemList";
+import { fineArt } from "../components/item/item";
+import { useEffect } from "react"
 
 export const getProducts = new Promise((res,rej) =>{
   setTimeout(() => {

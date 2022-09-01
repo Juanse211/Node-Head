@@ -2,6 +2,7 @@ import { useState } from 'react'
 
 const ItemCount = (stock, initial) => {  
   const [count, setCount] = useState([])
+  console.log(count)
   
   return (
     <div>
@@ -30,7 +31,7 @@ const ItemCount = (stock, initial) => {
         >+</button>
         <button onClick={()=>{
           if(count.length >= 5){
-            console.log(count)
+            console.log(count.length)
             alert('no more stock')
           }else{
             setCount([...count, +1])

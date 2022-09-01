@@ -24,11 +24,11 @@ export const fineArt =[
 {"id" :22, "name": "MINOS WALL III", "price": 38, "price28": 78, "price40": 123, "amount": 0, "img":23}
 ]
 
-export const Item = () => {  
+export const Item = (fineArt) => {  
   return <>
     <div class="card__header">
-      <h4>{fineArt.name}</h4>
-      <span>$ {fineArt.price}</span>
+      <h5>{fineArt.art.name}</h5>
+      <span>$ {fineArt.art.price}</span>
     </div>
   </>
 }
