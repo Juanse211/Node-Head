@@ -1,46 +1,28 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
 
-const ItemCount = (stock, initial) => {  
-  const [count, setCount] = useState([])
-  console.log(count)
-  
+export const ItemCount = ({initial, stock, onAdd}) => {  
+  const [count, setCount] = useState(initial)
+console.log(count)
+  const add = () => {
+    if (count < stock){
+      setCount(count + 1)
+    }
+  }
+  const substract = () => {
+    if (count < initial){
+      setCount(count - 1)
+    }
+  }
   return (
-    <div>
+        <div>
       <div>
-        <h2>the count is: ${count.length}</h2>
+        <h2>{count}</h2>
       </div>
       <div>
-        <button onClick={()=>{
-          if(count.lenght <= initial){
-            alert('min is 1')
-          }else{
-            setCount([...count, -1])
-            console.log(count)
-          }
-        }}
-        >-</button>
-        <button onClick={()=>{
-          if(count.length >= stock){
-            console.log(count)
-            alert('no more stock')
-          }else{
-            setCount([...count, +1])
-            console.log(count)
-          }
-        }}
-        >+</button>
-        <button onClick={()=>{
-          if(count.length >= 5){
-            console.log(count.length)
-            alert('no more stock')
-          }else{
-            setCount([...count, +1])
-            console.log(count)
-          }
-        }}
-        >Add To cart</button>
+        <button onClick={substract}>-</button>
+        <button onClick={add}>+</button>
+        <button onClick={onAdd}>Add To cart</button>
       </div>
     </div>
   )
 }
-export default ItemCount

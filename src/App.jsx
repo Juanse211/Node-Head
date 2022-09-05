@@ -1,8 +1,8 @@
 import './App.css';
-import Footer from './components/Footer';
-import Header from './components/Header';
+import { Footer } from './components/Footer';
+import { Header } from './components/Header';
 import { ItemListContainer } from './container/itemListContainer'
-import ItemCount from './components/Cart/itemCount'
+import { ItemCount } from './components/Cart/itemCount'
 
 
 
@@ -11,10 +11,8 @@ const App = () => {
     <div className="App">
       <Header />
       <ItemCount stock="5" initial="1" /> 
-      <Footer />
       <ItemListContainer greeting="Radiohead Fanpage" />
-      <header className="App-header">
-      </header>
+      <Footer />
     </div>
   );
 }

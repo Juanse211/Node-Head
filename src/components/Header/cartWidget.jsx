@@ -1,4 +1,4 @@
-const CartIcon = () => {  
+export const CartIcon = () => {  
   return (
     <div>
       <img id="cart" src="../files/shopping-cart.png" alt="cart"/>
@@ -6,4 +6,3 @@ const CartIcon = () => {
     </div>
   )  
 }
-export default CartIcon
