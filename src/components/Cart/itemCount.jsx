@@ -2,14 +2,13 @@ import React, { useState } from 'react'
 
 export const ItemCount = ({initial, stock, onAdd}) => {  
   const [count, setCount] = useState(initial)
-console.log(count)
   const add = () => {
     if (count < stock){
       setCount(count + 1)
     }
   }
   const substract = () => {
-    if (count < initial){
+    if (count > initial){
       setCount(count - 1)
     }
   }

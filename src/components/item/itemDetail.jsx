@@ -2,8 +2,7 @@ import  React from 'react';
 import { fineArt } from './item';
 import { Item } from './item';
 
-
-export const ItemList = () =>{
+export const GetItem = () =>{
   return(
     <ul>
       { fineArt.map(art => {
