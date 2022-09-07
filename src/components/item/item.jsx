@@ -25,8 +25,9 @@ export const fineArt =[
 ]
 export const Item = (fineArt) => {  
   return <>
-      <div className="card__aside">
-      <img className="card__image img__modal" src={fineArt.art.img} alt="Fine Art" />
+  <div className="card">
+    <div className="card__aside">
+      <img className="card__image" src={fineArt.art.img} alt="Fine Art" />
     </div>
     <div className="card__header">
       <h4 className="card__title fs-paragraph fs-color">{fineArt.art.name}</h4>
@@ -34,5 +35,7 @@ export const Item = (fineArt) => {
         <span className="card__subtitle-money fs-paragraph fs-color">$ {fineArt.art.price}</span>
       </div>
     </div>
+  </div>
+      
   </>
 }
