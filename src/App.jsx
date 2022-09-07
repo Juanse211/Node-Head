@@ -1,4 +1,4 @@
-import './App.css';
+import './css/main.css';
 import { Footer } from './components/Footer';
 import { Header } from './components/Header';
 import { ItemListContainer } from './container/itemListContainer'
@@ -11,8 +11,8 @@ const App = () => {
   return (
     <div className="App">
       <Header />
-      <ItemCount stock={5} initial={1}/> 
       <ItemDetailContainer />
+      <ItemCount stock={5} initial={1}/> 
       <Footer />
     </div>
   );

@@ -24,11 +24,15 @@ export const fineArt =[
 {"id" :22, "name": "MINOS WALL III", "price": 38, "price28": 78, "price40": 123, "amount": 0, "img":"../files/shop/23.jpg"}
 ]
 export const Item = (fineArt) => {  
-  return (
-    <div className="card__header">
-      <img src={fineArt.art.img} alt="img" />
-      <h5>{fineArt.art.name}</h5>
-      <span>$ {fineArt.art.price}</span>
+  return <>
+      <div className="card__aside">
+      <img className="card__image img__modal" src={fineArt.art.img} alt="Fine Art" />
     </div>
-  )
+    <div className="card__header">
+      <h4 className="card__title fs-paragraph fs-color">{fineArt.art.name}</h4>
+      <div className="card__subtitle">
+        <span className="card__subtitle-money fs-paragraph fs-color">$ {fineArt.art.price}</span>
+      </div>
+    </div>
+  </>
 }

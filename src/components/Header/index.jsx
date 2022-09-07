@@ -6,7 +6,7 @@ export const Header = () => {
       <nav>
         <div className="container-logo">
           <img id="logo-head" src="../files/radiohead.png" alt="Logo Radiohead"/>
-          <img id="logo-head" src="../files/radiohead-dark.png" alt="Logo Radiohead"/>
+          <img id="logo-head-dark" src="../files/radiohead-dark.png" alt="Logo Radiohead"/>
         </div>
         <div id="header__buttons">
           <CartIcon />
