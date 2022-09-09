@@ -1,14 +1,11 @@
 import  React from 'react';
 import { fineArt } from './item';
-import { Item } from './item';
 
-export const GetItem = () =>{
+export const ItemDetail = () =>{
   return(<>
-    <div className="container-card" id="container-card">
-      { fineArt.map(art => {
-        return <Item art={art}/>  
-        })
-      }
-    </div>
+  <ul>
+    <li>Fine art print (200gsm)</li>
+    <li>A museum-quality fine art print paper with a textured, matt finish.</li>
+  </ul>
   </>)
 }

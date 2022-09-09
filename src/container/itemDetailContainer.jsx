@@ -1,5 +1,6 @@
-import { GetItem } from "../components/item/itemDetail"
+import { GetItem } from "../components/item/itemList"
 import '../css/main.css';
+
 
 export const ItemDetailContainer = () => {
   return(<>
@@ -8,7 +9,7 @@ export const ItemDetailContainer = () => {
       <div className="card__text">
           <h2 className="fs-title-s fs-center fs-color">FINE ART PRINTS</h2>
       </div>
-        <GetItem />
+      <GetItem />
     </section>
     </>
   )

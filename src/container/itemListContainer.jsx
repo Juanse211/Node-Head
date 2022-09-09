@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { ItemList } from "../components/item/itemList";
+import { GetItem } from "../components/item/itemList";
 import { fineArt } from "../components/item/item";
 import { useEffect } from "react"
 
@@ -29,7 +29,7 @@ export const ItemListContainer = ({greeting}) => {
       <h2>
         {greeting}
       </h2>
-      <ItemList fineArt={fineArt}/>
+      <GetItem fineArt={fineArt}/>
     </div>
   )
 }

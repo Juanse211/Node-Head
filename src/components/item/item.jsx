@@ -1,3 +1,5 @@
+import { ItemDetail } from "./itemDetail"
+
 export const fineArt =[
 {"id" :0, "name": "RESIDENTIAL NEMESIS", "price": 38, "price28": 78, "price40": 123, "amount": 0, "img":"../files/shop/1.jpg"},
 {"id" :1, "name": "THIS MIGHT BE A COVER", "price": 38, "price28": 78, "price40": 123, "amount": 0, "img":"../files/shop/2.jpg"},
@@ -35,7 +37,7 @@ export const Item = (fineArt) => {
         <span className="card__subtitle-money fs-paragraph fs-color">$ {fineArt.art.price}</span>
       </div>
     </div>
+      <ItemDetail />
   </div>
-      
   </>
 }

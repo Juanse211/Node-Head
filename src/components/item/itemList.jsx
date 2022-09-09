@@ -2,14 +2,13 @@ import  React from 'react';
 import { fineArt } from './item';
 import { Item } from './item';
 
-
-export const ItemList = () =>{
-  return(
-    <ul>
+export const GetItem = () =>{
+  return(<>
+    <div className="container-card" id="container-card">
       { fineArt.map(art => {
         return <Item art={art}/>  
         })
       }
-    </ul>
-  )
+    </div>
+  </>)
 }
