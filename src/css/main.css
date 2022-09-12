@@ -678,10 +678,10 @@ body.dark #play-station {
   min-width: max-content;
   background-color: transparent;
   width: 33%;
-  border: none;
   padding: 1vh;
   margin: 0 auto;
-  margin-bottom: 5vh; }
+  margin-bottom: 5vh;
+  border: none !important; }
 
 .card__aside {
   margin: 0 auto;
