@@ -1,7 +1,7 @@
-import { useState } from "react"
-import { GetItem } from "../components/item/itemList";
+import { useState, useEffect } from "react"
+import { useParams } from "react-router-dom";
 import { fineArt } from "../components/item/item";
-import { useEffect } from "react"
+import { ItemDetailContainer } from "./itemDetailContainer";
 
 export const getProducts = new Promise((res,rej) =>{
   setTimeout(() => {
@@ -12,6 +12,8 @@ export const getProducts = new Promise((res,rej) =>{
 
 export const ItemListContainer = ({greeting}) => {
   const [fineArt, setFineArt] = useState([])
+  const {parameterUrl} = useParams()
+  console.log(parameterUrl)
 
   useEffect(() => {
     getProducts
@@ -24,12 +26,7 @@ export const ItemListContainer = ({greeting}) => {
     console.log('Added to cart')
   }
 
-  return (
-    <div>
-      <h2>
-        {greeting}
-      </h2>
-      <GetItem fineArt={fineArt}/>
-    </div>
-  )
+  return<>
+    <ItemDetailContainer />
+  </>
 }

@@ -1,4 +1,5 @@
 import { ItemDetail } from "./itemDetail"
+import { ItemCount } from "../Cart/itemCount";
 
 export const fineArt =[
 {"id" :0, "name": "RESIDENTIAL NEMESIS", "price": 38, "price28": 78, "price40": 123, "amount": 0, "img":"../files/shop/1.jpg"},
@@ -38,6 +39,7 @@ export const Item = (fineArt) => {
       </div>
     </div>
       <ItemDetail />
+      <ItemCount stock={5} initial={1}/> 
   </div>
   </>
 }
