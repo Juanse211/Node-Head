@@ -4,20 +4,28 @@ export const CartContext = React.createContext()
 
 export const CartProvider = ({ children }) => {
 
+  const [artUnique, setartUnique] = useState([])
 
   const [cart, setcart] = useState([])
 
-
-  const isInCart = (art) => {
-    console.log(art)
-    console.log(art.id)
-    cart.find(art) // no funca, pero el push si... ni idea
-    console.log(cart)
-
-  }
+  const isInCart = cart.some(function (art) {
+    return art.id === artUnique[0].id
+  })
 
   const addItem = (art) => {
+    console.log(isInCart)
+    console.log(artUnique[0].id)
 
+    /*
+    console.log(isInCart)
+    if (isInCart === false) {
+      cart.push(art)
+      isInCart()
+    } else {
+      console.log("si ta")
+    }
+    console.log(cart)
+    */
   }
 
   const clear = () => {
@@ -29,8 +37,9 @@ export const CartProvider = ({ children }) => {
   }
 
   return (
-    <CartContext.Provider value={{ cart, isInCart, addItem, clear, removeItem }}>
+    <CartContext.Provider value={{ artUnique, cart, isInCart, addItem, clear, removeItem }}>
       {children}
     </CartContext.Provider>
   )
 }
+

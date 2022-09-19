@@ -11,11 +11,12 @@ export const ItemDetail = () => {
     return art.id == productId
   })
 
-  const { addItem, isInCart } = useContext(CartContext)
+  const { artUnique, addItem, isInCart } = useContext(CartContext)
 
   const onAdd = (cantidad) => {
     FindArt.amount = cantidad
-    isInCart(FindArt)
+    artUnique.push(FindArt)
+    addItem()
   }
 
   return <>
