@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { fineArt, Item } from './item';
 import { ItemCount } from "../Cart/itemCount";
 import { useParams } from "react-router-dom";
+import { CartContext } from '../../context/cartContext';
 
 export const ItemDetail = () => {
   const { productId } = useParams()
@@ -10,9 +11,13 @@ export const ItemDetail = () => {
     return art.id == productId
   })
 
+  const { addItem, isInCart } = useContext(CartContext)
+
   const onAdd = (cantidad) => {
-    console.log(`${cantidad} product has been added`)
+    FindArt.amount = cantidad
+    isInCart(FindArt)
   }
+
   return <>
     <br />
     <br />
