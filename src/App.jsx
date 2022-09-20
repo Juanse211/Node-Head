@@ -8,12 +8,12 @@ import { ItemDetailContainer } from "./container/itemDetailContainer";
 import { CheckoutContainer } from "./container/checkoutContainer";
 import { CostumerServicesContainer } from "./container/costumerServicesContainer";
 import { ToursAndShowsContainer } from "./container/toursAndShowsContainer";
-import { CartProvider } from "./context/cartContext";
+import { cartContext } from "./context/cartContext";
 
 
 const App = () => {
   return <>
-    <CartProvider>
+    <cartContext>
       <BrowserRouter>
         <Header />
         <Routes>
@@ -26,7 +26,7 @@ const App = () => {
         </Routes>
         <Footer />
       </BrowserRouter>
-    </CartProvider>
+    </cartContext>
   </>;
 };
 
