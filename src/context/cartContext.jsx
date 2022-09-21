@@ -6,20 +6,20 @@ const { Provider } = cartContext
 export const CartContext = ({ children }) => {
 
   const [cart, setcart] = useState([])
-  const [total, settotal] = useState(0)
-
+  const [total, setTotal] = useState(0)
 
   const isInCart = (item) => {
     const result = cart.some(p => p.item.id == item.id)
+    return result
   }
 
-  const cartProductAux = []
+  let cartProductAux = []
   const addItem = (item, quantity) => {
-    const cartProduct = { item, quantity }
+    let cartProduct = { item, quantity }
 
     if (isInCart(item)) {
-      cartProduct = cart.find(p => p.item.id == item.id)
-      cartProductAux.quantity = cartProduct.quantity + quantity
+      cartProduct = cart.find(p => p.item.id === item.id)
+      cartProduct.quantity = cartProduct.quantity + quantity
       cartProductAux = [...cart]
     } else {
       cartProductAux = [...cart, cartProduct]
