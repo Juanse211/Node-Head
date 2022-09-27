@@ -6,7 +6,7 @@ import { useParams } from "react-router-dom";
 import { useEffect } from "react";
 import { useState } from "react";
 
-export const ItemDetail = ({ product }) => {
+export const ItemDetail = () => {
   const { productId } = useParams();
 
   const [localFineArt, setLocalFineArt] = useState({});
@@ -24,9 +24,9 @@ export const ItemDetail = ({ product }) => {
 
   const context = useContext(cartContext);
 
-  const onAdd = (quality) => {
-    context.addItem(product, quality);
-    console.log(context.art);
+  const onAdd = (quantity) => {
+    context.addItem(localFineArt, quantity);
+    console.log(context.cart);
   };
 
   return (
