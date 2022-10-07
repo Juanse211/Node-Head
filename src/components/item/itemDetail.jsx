@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import { Fineart } from "./item";
 import { ItemCount } from "../Cart/itemCount";
 import { cartContext } from "../../context/cartContext";
 import { useParams } from "react-router-dom";
