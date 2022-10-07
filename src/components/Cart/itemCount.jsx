@@ -15,12 +15,12 @@ export const ItemCount = ({ initial, stock, onAdd }) => {
   return (
     <div>
       <div>
-        <h2>{count}</h2>
-      </div>
-      <div>
+        <div className="checkbox__body-33 modal__quantity">
+          <input className="checkbox__input" type="number" id="quantity" name="quantity" value="1" min="0" />
+        </div>
         <button onClick={substract}>-</button>
         <button onClick={add}>+</button>
-        <button onClick={() => onAdd(count)}>Add To cart</button>
+        <button className='button__body-' onClick={() => onAdd(count)}>Add To cart</button>
       </div>
     </div>
   )
