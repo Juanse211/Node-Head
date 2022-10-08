@@ -34,5 +34,4 @@ export const ItemListContainer = ({ greeting }) => {
       <ItemList />
     </section>
   </>
-
 }

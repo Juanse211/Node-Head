@@ -1,7 +1,10 @@
+import React from 'react'
+import { VideoHead } from '../components/Video/video'
+
 export const HomeContainer = () => {
   return <>
     <section className="container-video">
-      <video id="video-head" src="radiohead/files/KID A MNESIA EXHIBITION trailer.mp4" poster="../../files/kidAmnesiaPoster.jpg" controls autoPlay muted></video>
+      <VideoHead />
     </section>
 
     <section className="container-arrow"><a href="#main-nav__link"><img src="../../files/down-arrow.png" id="arrow" /></a></section>
