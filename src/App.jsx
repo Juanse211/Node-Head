@@ -9,8 +9,8 @@ import { CheckoutContainer } from "./container/checkoutContainer";
 import { CostumerServicesContainer } from "./container/costumerServicesContainer";
 import { ToursAndShowsContainer } from "./container/toursAndShowsContainer";
 import { CartContextWrapper } from "./context/cartContext";
-
-
+import { FormContainer } from "./container/formContainer";
+import { TermsOfService } from "./container/termsOfServiceContainer";
 
 const App = () => {
   return <>
@@ -23,6 +23,8 @@ const App = () => {
           <Route path="/shop/detail/:productId" element={<ItemDetailContainer />} />
           <Route path="/costumerServices" element={<CostumerServicesContainer />} />
           <Route path="/toursAndShows" element={<ToursAndShowsContainer />} />
+          <Route path="/form" element={<FormContainer />} />
+          <Route path="/tos" element={<TermsOfService />} />
           <Route path="/checkout" element={<CheckoutContainer />} />
         </Routes>
         <Footer />

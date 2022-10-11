@@ -19,12 +19,12 @@
 .card {
   display: flex;
   min-width: max-content;
-  background-color: transparent;
   width: 33%;
   padding: 1vh;
   margin: 0 auto;
   margin-bottom: 5vh;
   border: none !important;
+  background-color: transparent !important;
 }
 
 .card__aside {
