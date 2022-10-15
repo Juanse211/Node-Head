@@ -2,6 +2,7 @@ import "./css/main.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
+import { Cart } from "./components/Cart/cart";
 import { HomeContainer } from "./container/homeContainer";
 import { ItemListContainer } from "./container/shopContainer";
 import { ItemDetailContainer } from "./container/itemDetailContainer";
@@ -19,6 +20,7 @@ const App = () => {
         <Header />
         <Routes>
           <Route path="/" element={<HomeContainer />} />
+          <Route path="/cart" element={<Cart />} />
           <Route path="/shop" element={<ItemListContainer />} />
           <Route path="/shop/detail/:productId" element={<ItemDetailContainer />} />
           <Route path="/costumerServices" element={<CostumerServicesContainer />} />

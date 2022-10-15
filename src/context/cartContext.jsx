@@ -13,10 +13,10 @@ export const CartContextWrapper = ({ children }) => {
 
   let cartProductAux = [];
   const addItem = (item, quantity) => {
-    let cartProduct = { item, quantity };
+    let cartProduct = { ...item, quantity };
 
     if (isInCart(item)) {
-      cartProduct = cart.find((p) => p.item.id === item.id);
+      cartProduct = cart.find((p) => p.id === item.id);
       cartProduct.quantity = cartProduct.quantity + quantity;
       cartProductAux = [...cart];
     } else {
@@ -30,7 +30,7 @@ export const CartContextWrapper = ({ children }) => {
   };
 
   const removeItem = (id) => {
-    cartProductAux = cart.filter((p) => p.item.id !== id);
+    cartProductAux = cart.filter((p) => p.id !== id);
     setcart(cartProductAux);
   };
 

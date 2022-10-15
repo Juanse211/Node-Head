@@ -12,7 +12,6 @@ export const ItemList = () => {
       const docs = snapshot.docs.map((doc) => ({
         ...doc.data()
       }))
-      console.log(docs)
       setProducts(docs)
     })
   }, [])

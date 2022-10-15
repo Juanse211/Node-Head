@@ -1,26 +1,21 @@
+import { useContext } from "react"
+import { cartContext } from "../../context/cartContext";
 
+export const Cart = () => {
+  const { cart, removeItem } = useContext(cartContext);
+  console.log("hola", cart)
 
+  return <>
+    <main className="cart">
+      <section className="cart-container">
+        {cart.map(item => <article key={item.id}>
+          <img src={item.img} width="200px" alt={item.name} />
+          <p>{item.name}</p>
+          <p>{item.amount}</p>
+          <p onClick={() => removeItem(item.id)} >borrar </p>
 
-
-
-
-/*
-      `
-    <div id="cart__body">
-      <div id="cart__aside">
-        <div id="cart__name">
-          <p id="cart__name-p" className="fs-color-inverted">${item.name}</p>
-        </div>
-      </div>
-          
-      <div id="cart__price">
-        <p id="cart__price-p" className="fs-color-inverted">${item.price}</p>
-      </div>
-          
-      <div id="cart__amount-close">
-        <label><input id="cart__amount" type="number" id="quantity" name="quantity" value="${item.amount}" min="1"/></label>
-        <button id="cart__delete-${item.id}" className="cart__delete"> X </button>
-      </div>
-    <div
-    `
-*/
+        </article>)}
+      </section>
+    </main >
+  </>
+}
