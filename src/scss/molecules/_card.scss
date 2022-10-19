@@ -57,6 +57,20 @@
   z-index: 0;
 }
 
+.button-view__container {
+  margin: auto;
+}
+
+.button-view {
+  width: max-content;
+  height: 3.5vh;
+  border: 1px solid $dark-color;
+  border-radius: 0.25rem;
+  line-height: 1.5;
+  background-color: $primary-dark-color;
+  color: $light-color;
+}
+
 @media screen and (max-width: 768px) {
   .card {
     width: 100%;

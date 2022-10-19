@@ -1,0 +1,38 @@
+.itemCount__container {
+  display: flex;
+  margin-right: auto;
+  margin-top: 3vh;
+  left: auto;
+}
+
+.count {
+  width: 7vh;
+}
+
+.buttonsContainer {
+  margin-right: 1vh;
+  margin-left: 1vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.buttons {
+  width: 3.5vh;
+  height: 3.5vh;
+  border: 1px solid $dark-color;
+  border-radius: 0.25rem;
+  background-color: $gray-color;
+  color: $dark-color;
+  margin-bottom: 0.5vh;
+}
+
+.buttonAddToCart__container {
+  display: flex;
+  margin-right: auto;
+  margin-left: 3vh;
+}
+
+.marginHeightAuto {
+  margin-bottom: auto;
+  margin-top: auto;
+}

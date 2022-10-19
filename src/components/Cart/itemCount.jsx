@@ -13,14 +13,16 @@ export const ItemCount = ({ initial, stock, onAdd }) => {
     }
   }
   return (
-    <div>
-      <div>
-        <div className="checkbox__body-33 modal__quantity">
-          <input className="checkbox__input" id="quantity" disabled name="quantity" value={count} min="0" />
-        </div>
-        <button onClick={substract}>-</button>
-        <button onClick={add}>+</button>
-        <button className='button__body' onClick={() => onAdd(count)}>Add To cart</button>
+    <div className='itemCount__container'>
+      <div className="count marginHeightAuto">
+        <input className="checkbox__input" id="quantity" disabled name="quantity" value={count} min="0" />
+      </div>
+      <div className='buttonsContainer'>
+        <button className='buttons' onClick={add}>+</button>
+        <button className='buttons' onClick={substract}>-</button>
+      </div>
+      <div className='buttonAddToCart__container'>
+        <button className='button__body marginHeightAuto' onClick={() => onAdd(count)}>Add To cart</button>
       </div>
     </div>
   )

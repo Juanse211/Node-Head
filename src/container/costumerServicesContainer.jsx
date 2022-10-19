@@ -1,8 +1,10 @@
+import { Link } from "react-router-dom"
+
 export const CostumerServicesContainer = () => {
   return <>
-    <section class="checkbox">
-      <h1 class=" fs-bleeding fs-color fs-center fs-title-l">CUSTOMER SERVICES</h1>
-      <p class="fs-paragraph fs-color">
+    <section className="checkbox">
+      <h1 className=" fs-bleeding fs-color fs-center fs-title-l">CUSTOMER SERVICES</h1>
+      <p className="fs-paragraph fs-color">
         <br />
         When contacting us regarding an existing order, please provide as much information as you can about you and your
         order to enable us to respond quickly and effectively to your query.
@@ -14,60 +16,60 @@ export const CostumerServicesContainer = () => {
       </p>
     </section>
 
-    <form class="fs-paragraph checkbox">
-      <div class="checkbox__body">
-        <div class="checkbox__body-50">
-          <label class="checkbox__label" for="first-name">First Name</label>
-          <input class="checkbox__input" type="text" id="first-name" required />
+    <form className="fs-paragraph checkbox">
+      <div className="checkbox__body">
+        <div className="checkbox__body-50">
+          <label className="checkbox__label" for="first-name">First Name</label>
+          <input className="checkbox__input" type="text" id="first-name" required />
         </div>
 
-        <div class="checkbox__body-50">
-          <label class="checkbox__label" for="last-name" >Last Name</label>
-          <input class="checkbox__input" type="text" id="last-name" required />
+        <div className="checkbox__body-50">
+          <label className="checkbox__label" for="last-name" >Last Name</label>
+          <input className="checkbox__input" type="text" id="last-name" required />
         </div>
 
-        <div class="checkbox__body-66">
-          <label class="checkbox__label" for="email-info" >E-mail</label>
-          <input class="checkbox__input" type="email" id="email-info" required />
+        <div className="checkbox__body-66">
+          <label className="checkbox__label" for="email-info" >E-mail</label>
+          <input className="checkbox__input" type="email" id="email-info" required />
         </div>
 
-        <div class="checkbox__body-33">
-          <label class=" checkbox__label" for="phone-number">Phone Number</label>
-          <input class="checkbox__input" type="text" id="phone-number" />
+        <div className="checkbox__body-33">
+          <label className=" checkbox__label" for="phone-number">Phone Number</label>
+          <input className="checkbox__input" type="text" id="phone-number" />
         </div>
 
-        <div class="checkbox__body-50">
-          <label class="checkbox__label" for="customer-reference">Customer reference</label>
-          <input class="checkbox__input" type="text" id="customer-reference" placeholder="Shown on all our confirmation emails" />
+        <div className="checkbox__body-50">
+          <label className="checkbox__label" for="customer-reference">Customer reference</label>
+          <input className="checkbox__input" type="text" id="customer-reference" placeholder="Shown on all our confirmation emails" />
         </div>
 
-        <div class="checkbox__body-50 fs-color">
-          <label class="checkbox__label" for="example-form-control-select-1 ">Example select</label>
-          <select class="checkbox__input" id="example-form-control-select-1" placeholder="Select">
+        <div className="checkbox__body-50 fs-color">
+          <label className="checkbox__label" for="example-form-control-select-1 ">Example select</label>
+          <select className="checkbox__input" id="example-form-control-select-1" placeholder="Select">
             <option value="gq">General query</option>
             <option value="ihrmt">I haven't received my tickets</option>
             <option value="ilmt">I've lost my tickets</option>
           </select>
         </div>
 
-        <div class="checkbox__body-50 ">
-          <label class="checkbox__label" for="coments">Your Message</label>
-          <textarea class="checkbox__input" id="comments" name="message" rows="3"></textarea>
+        <div className="checkbox__body-50 ">
+          <label className="checkbox__label" for="coments">Your Message</label>
+          <textarea className="checkbox__input" id="comments" name="message" rows="3"></textarea>
         </div>
 
-        <div class="checkbox__body-50 fs-colors">
-          <label class="checkbox__label" for="event-details" >Event Details</label>
-          <input class="checkbox__input" type="text" id="event-details" placeholder="Ej. Venue, Date" />
+        <div className="checkbox__body-50 fs-colors">
+          <label className="checkbox__label" for="event-details" >Event Details</label>
+          <input className="checkbox__input" type="text" id="event-details" placeholder="Ej. Venue, Date" />
         </div>
 
-        <div class="checkbox-2">
-          <div class="tof">
-            <label class="fs-color" for="acepta">I agree to the <a class="fs-primary-color" href="../html/terms-of-service.html">Term of Service and PrivacyPolicy</a></label>
-            <input class="tof__input" id="acepta" type="checkbox" name="acepta" value="1" />
+        <div className="checkbox-2">
+          <div className="tof">
+            <label for="acepta ">I agree to the <Link className="fs-primary-color" to={"/tos"}>Term of Service and PrivacyPolicy</Link></label>
+            <input className="tof__input" id="acepta" type="checkbox" name="acepta" value="1" />
           </div>
-          <div class="button">
+          <div className="button">
             <a href="#"></a>
-            <input class="button__body" type="submit" value="Continue" />
+            <input className="button__body" type="submit" value="Continue" />
           </div>
         </div>
       </div>

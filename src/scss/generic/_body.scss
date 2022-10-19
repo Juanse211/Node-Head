@@ -1,9 +1,13 @@
 body {
-  background-color: $light-color !important;
   font-family: $font-family;
   transition: .3s ease all;
+  background-color: $light-color !important;
+}
 
-  &.dark {
-    background-color: $dark-color;
-  }
+#light {
+  background-color: $light-color !important;
+}
+
+#dark {
+  background-color: $dark-color !important;
 }

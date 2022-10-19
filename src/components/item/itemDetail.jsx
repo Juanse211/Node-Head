@@ -32,19 +32,22 @@ export const ItemDetail = () => {
   return (
     <>
       {localFineArt ? (
-        <div className="modal-container fs-bleeding">
-          <div id="modal" className="my-modal">
-            <div id="modal__aside">
-              <img id="modal__img" src={`../${localFineArt.img}`} alt="Fine Art" />
+        <div className="detail-container fs-bleeding">
+          <div id="detail" className="my-detail">
+            <div id="detail__aside">
+              <img id="detail__img" src={`../${localFineArt.img}`} alt="Fine Art" />
             </div>
-            <div id="modal__section">
-              <div id="modal__header">
+            <div id="detail__section">
+              <div id="detail__header">
                 <h4 className="fs-color">{localFineArt.name}</h4>
                 <h5 className="fs-color">$ {localFineArt.price}</h5>
               </div>
               <ItemCount stock={5} initial={1} onAdd={onAdd} />
-              <div id="modal__footer">
+              <div id="detail__footer">
                 <ul>
+                  <li>
+                    Size (12'x12')
+                  </li>
                   <li>
                     Fine art print (200gsm)
                   </li>

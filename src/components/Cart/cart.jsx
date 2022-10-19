@@ -7,13 +7,13 @@ export const Cart = () => {
 
   return <>
     <main className="cart">
+      <p>Cart</p>
       <section className="cart-container">
         {cart.map(item => <article key={item.id}>
           <img src={item.img} width="200px" alt={item.name} />
           <p>{item.name}</p>
           <p>{item.amount}</p>
           <p onClick={() => removeItem(item.id)} >borrar </p>
-
         </article>)}
       </section>
     </main >

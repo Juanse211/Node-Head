@@ -15,8 +15,8 @@ export const Fineart = ({ art }) => {
           <span className="card__subtitle-money fs-paragraph fs-color">$ {art.price}</span>
         </div>
       </div>
-      <Link to={`/shop/detail/${art.id}`}>
-        <button>VIEW PRODUCT</button>
+      <Link className="button-view__container" to={`/shop/detail/${art.id}`}>
+        <button className="button-view">VIEW PRODUCT</button>
       </Link>
     </div>
   )
