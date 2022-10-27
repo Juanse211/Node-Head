@@ -7,7 +7,7 @@ export const CartContextWrapper = ({ children }) => {
   const [total, setTotal] = useState(0);
 
   const isInCart = (item) => {
-    const result = cart.some((p) => p.item.id == item.id);
+    const result = cart.some((p) => p.id == item.id);
     return result;
   };
 

@@ -30,13 +30,14 @@ $-fs-44: 44 / $fs-base + rem;
   font-size: $-fs-44;
 }
 
-.fs-title-s{
+.fs-title-s {
   font-size: $-fs-25;
 }
 
 //Typography color
-.fs-color{
+.fs-color {
   color: $dark-color;
+
   body.dark & {
     color: $light-color;
   }
@@ -44,25 +45,27 @@ $-fs-44: 44 / $fs-base + rem;
 
 .fs-color-inverted {
   color: $light-color;
+
   body.dark & {
     color: $dark-color;
   }
 }
 
-.fs-primary-color{
+.fs-primary-color {
   color: $primary-dark-color;
+
   body.dark & {
-      color: $primary-light-color;
-    }
+    color: $primary-light-color;
+  }
 }
 
 // Bleeding
 .fs-bleeding {
-  margin-top: 10vh;
+  margin-top: 11vh;
 }
 
 //Typography aline
-.fs-center{
+.fs-center {
   text-align: center;
 }
 
